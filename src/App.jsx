@@ -3,14 +3,19 @@ import Todos from './componenets/Todos'
 import AppTodo from './componenets/AddTodo'
 
 function App() {
- 
-
   return (
-    <>
-     <h1>Hello from redux side </h1>
-     <AppTodo />
-     <Todos/>
-    </>
+    <div className="app">
+      <header className="header">
+        <h1>Redux Todo App</h1>
+        <p>Manage your tasks efficiently with Redux Toolkit</p>
+      </header>
+      <main className="container">
+        <div className="todo-section">
+          <AppTodo />
+          <Todos />
+        </div>
+      </main>
+    </div>
   )
 }
 
