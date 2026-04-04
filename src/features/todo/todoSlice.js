@@ -1,7 +1,20 @@
 import { createSlice ,nanoid} from '@reduxjs/toolkit';
 
+const loadFromLocalStorage =()=>{
+    try{
+        const serializedState = localStorage.getItem("todos");
+        if(serializedState === null){
+            return [{id:1 ,text:"Hello World"}];
+        }
+
+        return JSON.parse(serializedState);
+    }catch(e){
+        console.warn("could not load data",e)
+        return [];
+    }
+}
 const initialState = {
-    todos: [{id:1 ,text:"Hello World"}]
+    todos: loadFromLocalStorage()
 }
 
 export const todoSlice = createSlice({
