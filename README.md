@@ -1,16 +1,37 @@
-# React + Vite
+# 📝 Redux Todo App (CRUD)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance To-Do application built with **React** and **Redux Toolkit**. This project demonstrates professional state management, including full **CRUD** (Create, Read, Update, Delete) operations with a clean and responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* **Create**: Instantly add new tasks with unique IDs using `nanoid`.
+* **Read**: Real-time synchronization with the global Redux store.
+* **Update**: In-place editing of existing tasks with a seamless toggle between "View" and "Edit" modes.
+* **Delete**: Efficient removal of tasks using filtered state logic.
+* **Modern State Management**: Uses Redux Toolkit (RTK) for clean, scalable code.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📸 Project Showcase
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Application Screenshot](./src/assets/Screenshot%202026-04-04%20202130.png)
+*(Note: To show your screenshot, save your image as 'screenshot.png' inside an 'assets' folder in this repo)*
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend**: React.js
+* **State Management**: Redux Toolkit (Slices, Store, Dispatch)
+* **ID Generation**: Nanoid
+* **Styling**: CSS-in-JS (Standard React Styling)
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/HariomPatel2002/redux-todo-app.git](https://github.com/HariomPatel2002/redux-todo-app.git)
