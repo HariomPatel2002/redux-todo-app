@@ -37,6 +37,14 @@ export const todoSlice = createSlice({
             if(existingTodo){
                 existingTodo.text = text;
             }
+        },
+        toggleTodo: (state, action) =>{
+            const todo = state.todos.find((t) => t.id === action.payload);
+    
+            if (todo) {
+                // If it was false, it becomes true. If true, it becomes false.
+                todo.completed = !todo.completed;
+            }
         }
     }
 })
