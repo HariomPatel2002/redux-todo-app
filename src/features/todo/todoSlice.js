@@ -45,10 +45,13 @@ export const todoSlice = createSlice({
                 // If it was false, it becomes true. If true, it becomes false.
                 todo.completed = !todo.completed;
             }
+        },
+        setFilter: (state, action) => {
+            state.filter = action.payload;
         }
     }
 })
 
-export const {addTodo, removeTodo, updateTodo} = todoSlice.actions;
+export const {addTodo, removeTodo, updateTodo,toggleTodo, setFilter} = todoSlice.actions;
 
 export default todoSlice.reducer;
